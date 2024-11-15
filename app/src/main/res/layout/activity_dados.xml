@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sueplo"
+    app:backgroundTint="@null"
+    tools:context=".Dados">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="295dp"
+        android:layout_height="457dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/tapete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="66dp">
+
+                <ImageView
+                    android:id="@+id/vaso2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:rotation="-181"
+                    android:rotationY="-181"
+                    app:srcCompat="@drawable/vaso"
+                    tools:ignore="MissingConstraints" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/dado2"
+                            android:layout_width="42dp"
+                            android:layout_height="41dp"
+                            app:srcCompat="@drawable/dado1"
+                            tools:ignore="MissingConstraints" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="163dp">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/dado1"
+                            android:layout_width="43dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/dado1"
+                            tools:ignore="MissingConstraints" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="23dp">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/vaso1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/vaso"
+                    tools:ignore="MissingConstraints" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="413dp"
+        android:layout_height="104dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/texto_juego_dados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a el Juego de los dados pruebe a dar el boton para lanzar sus dados "
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/instrucciones_juego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El juego consistira en que tu tiraras los dados y tu rivall tambien una vex tirados quien saquie mayor puntuacion gana"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="69dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_lanzar_dado"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:text="Lanzar"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:layout_editor_absoluteX="58dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
